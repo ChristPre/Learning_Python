@@ -67,7 +67,7 @@ Where "helloworld.py" is the name of your python file.
 
 Executing python syntax can be done by writing directly in the Command Line:
 >>> print("Hello, World!")
-Hello, World!
+Hello, World !
 
 
 
