@@ -1,6 +1,6 @@
 # Learning Python
 
-# PYTHON INTRODUCTION
+## PYTHON INTRODUCTION
 
 Python is a popular programming language.
 
