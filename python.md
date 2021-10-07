@@ -2,11 +2,15 @@
 
 # PYTHON INTRODUCTION
 
+Python is a popular programming language.
+
+Python can be used on a server to create web applications.
+
 ## WHAT IS PYTHON ?
 
 Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
 
-![This is an image]()
+![70fa523c20fd1ac614d08ff9521cff3c46_scaled_v1_400](https://user-images.githubusercontent.com/76608611/136461420-d1e0b720-a611-484f-895b-e341f35d0e01.jpg)
 
 It is used for:
 
@@ -42,10 +46,30 @@ It is used for:
 - Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.
 - Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose
 
-### EXAMPLE 
+###### EXAMPLE 
 
 ```.py
 print("Hello, Christ Précieux")
 
 ```
+
+## PYTHON QUICKSTART
+
+Python is an interpreted programming language, this means that as a developer you write Python (.py) files in a text editor and then put those files into the python interpreter to be executed.
+
+The way to run a python file is like this on the command line:
+
+> C:\Users\Your Name>python helloworld.py
+
+Where "helloworld.py" is the name of your python file.
+
+## PYTHON SYNTAX
+
+Executing python syntax can be done by writing directly in the Command Line:
+>>> print("Hello, World!")
+Hello, World!
+
+
+
+
 
