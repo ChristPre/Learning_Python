@@ -69,6 +69,83 @@ Executing python syntax can be done by writing directly in the Command Line:
 >>> print("Hello, World!")
 Hello, World !
 
+## PYTHON IDENTATION
+
+Indentation refers to the spaces at the beginning of a code line.
+
+Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.
+
+Python uses indentation to indicate a block of code.
+
+###### EXAMPLE
+
+```.py
+if 5 > 2:
+  print("Five is greater than two!")
+```
+However, Python will give you an error if you skip the indentation:
+
+```.py
+if 5 > 2:
+print("Five is greater than two!")
+```
+
+NB: The number of spaces is up to you as a programmer, but it has to be at least one.
+
+```.py
+if 5 > 2:
+ print("Five is greater than two!") 
+if 5 > 2:
+        print("Five is greater than two!")
+```
+
+In order to avoid any code issue, You have to use the same number of spaces in the same block of code, otherwise Python will give you an error:
+
+```.py
+if 5 > 2:
+ print("Five is greater than two!")
+        print("Five is greater than two!")
+```
+
+###### Python variables
+
+In Python, variables are created when you assign a value to it:
+
+###### EXAMPLE
+
+```.py
+x = 5
+y = "Hello, World!"
+
+print(x)
+print(y)
+```
+
+Python has no command for declaring a variable.
+This will be learn more in Python Variable chapter
+
+###### Comments
+
+Python has commenting capability for the purpose of in-code documentation.
+
+Comments start with a #, and Python will render the rest of the line as a comment:
+
+```.py
+# this is a comment
+print("Nice to learn Python C'P!")
+```
+
+## PYTHON COMMENTS
+
+Comments can be used to explain Python code.
+
+Comments can be used to make the code more readable.
+
+Comments can be used to prevent execution when testing code.
+
+**Creating a Comment**
+
+
 
 
 
