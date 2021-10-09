@@ -546,3 +546,397 @@ If you want to specify the data type, you can use the following constructor func
 | x = memoryview(bytes(5))                     	| memoryview 	|
 
 
+## PYTHON NUMBERS
+
+There are three numeric types in Python:
+
+- int
+- float 
+- complex
+
+Variables of numeric types are created when you assign a value to them:
+
+```.py
+x = 1    # int
+y = 2.8  # float
+z = 1j   # complex
+```
+
+To verify the type of any object in Python, use the type() function:
+
+```.py
+print(type(x))
+print(type(y))
+print(type(z))
+```
+
+**Int**
+
+Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length.
+
+integers:
+
+```.py
+x = 1
+y = 35656222554887711
+z = -3255522
+
+print(type(x))
+print(type(y))
+print(type(z))
+```
+
+**Float**
+
+Float, or "floating point number" is a number, positive or negative, containing one or more decimals.
+
+```.py
+x = 1.10
+y = 1.0
+z = -35.59
+
+print(type(x))
+print(type(y))
+print(type(z))
+```
+Float can also be scientific numbers with an "e" to indicate the power of 10.
+
+```.py
+x = 35e3
+y = 12E4
+z = -87.7e100
+
+print(type(x))
+print(type(y))
+print(type(z))
+```
+
+**Complex**
+
+Complex numbers are written with a "j" as the imaginary part:
+
+```.py
+x = 3+5j
+y = 5j
+z = -5j
+
+print(type(x))
+print(type(y))
+print(type(z))
+```
+
+**Type Conversion**
+
+You can convert from one type to another with the int(), float(), and complex() methods:
+
+Convert from one type to another:
+
+```.py
+x = 1    # int
+y = 2.8  # float
+z = 1j   # complex
+
+#convert from int to float:
+a = float(x)
+
+#convert from float to int:
+b = int(y)
+
+#convert from int to complex:
+c = complex(x)
+
+print(a)
+print(b)
+print(c)
+
+print(type(a))
+print(type(b))
+print(type(c))
+```
+
+**Note:** You cannot convert complex numbers into another number type.
+
+**Random Number**
+
+Python does not have a random() function to make a random number, but Python has a built-in module called random that can be used to make random numbers:
+
+Import the random module, and display a random number between 1 and 9:
+
+```.py
+import random
+
+print(random.randrange(1, 10))
+```
+
+## PYTHON CASTING
+
+**Specify a Variable Type**
+
+There may be times when you want to specify a type on to a variable. This can be done with casting. Python is an object-orientated language, and as such it uses classes to define data types, including its primitive types.
+
+Casting in python is therefore done using constructor functions:
+
+- int() - constructs an integer number from an integer literal, a float literal (by removing all decimals), or a string literal (providing the string represents a whole number)
+- float() - constructs a float number from an integer literal, a float literal or a string literal (providing the string represents a float or an integer)
+- str() - constructs a string from a wide variety of data types, including strings, integer literals and float literals
+
+***Integers**
+
+```.py
+x = int(1)   # x will be 1
+y = int(2.8) # y will be 2
+z = int("3") # z will be 3
+```
+
+***Floats***
+
+```.py
+x = float(1)     # x will be 1.0
+y = float(2.8)   # y will be 2.8
+z = float("3")   # z will be 3.0
+w = float("4.2") # w will be 4.2
+```
+
+***Strings***
+
+```.py
+x = str("s1") # x will be 's1'
+y = str(2)    # y will be '2'
+z = str(3.0)  # z will be '3.0'
+```
+
+## PYTHON STRINGS
+
+1. STRINGS 
+
+Strings in python are surrounded by either single quotation marks, or double quotation marks.
+
+'hello' is the same as "hello".
+
+You can display a string literal with the print() function:
+
+```.py
+print("Hello")
+print('Hello')
+```
+
+**Assign String to a Variable**
+
+Assigning a string to a variable is done with the variable name followed by an equal sign and the string:
+
+```.py
+a = "Hello"
+print(a)
+```
+
+**Multiline Strings**
+
+You can assign a multiline string to a variable by using three quotes:
+
+You can use three double quotes:
+
+```.py
+a = """Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua."""
+print(a)
+```
+
+Or three single quotes:
+
+```.py
+a = '''Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua.'''
+print(a)
+```
+
+Note: in the result, the line breaks are inserted at the same position as in the code.
+
+**Strings are Arrays**
+
+Like many other popular programming languages, strings in Python are arrays of bytes representing unicode characters.
+
+However, Python does not have a character data type, a single character is simply a string with a length of 1.
+
+Square brackets can be used to access elements of the string.
+
+Get the character at position 1 (remember that the first character has the position 0):
+
+```.py
+a = "Hello, World!"
+print(a[1])
+```
+
+**Looping Through a String**
+
+Since strings are arrays, we can loop through the characters in a string, with a for loop.
+
+Loop through the letters in the word "banana":
+
+```.py
+for x in "banana":
+  print(x)
+```
+
+**String Length**
+
+To get the length of a string, use the len() function.
+
+The len() function returns the length of a string:
+
+```.py
+a = "Hello, World!"
+print(len(a))
+```
+
+**Check String**
+
+To check if a certain phrase or character is present in a string, we can use the keyword in.
+
+Check if "free" is present in the following text:
+
+```.py
+txt = "The best things in life are free!"
+print("free" in txt)
+```
+
+Use it in an if statement:
+
+Print only if "free" is present:
+
+```.py
+txt = "The best things in life are free!"
+if "free" in txt:
+  print("Yes, 'free' is present.")
+```
+
+**Check if NOT**
+
+To check if a certain phrase or character is NOT present in a string, we can use the keyword not in.
+
+Check if "expensive" is NOT present in the following text:
+
+```.py
+txt = "The best things in life are free!"
+print("expensive" not in txt)
+```
+
+Use it in an if statement:
+print only if "expensive" is NOT present:
+
+```.py
+txt = "The best things in life are free!"
+if "expensive" not in txt:
+  print("No, 'expensive' is NOT present.")
+```
+
+2. Slicing Strings
+
+**Slicing**
+
+You can return a range of characters by using the slice syntax.
+
+Specify the start index and the end index, separated by a colon, to return a part of the string.
+
+Get the characters from position 2 to position 5 (not included):
+
+```.py
+b = "Hello, World!"
+print(b[2:5])
+```
+
+**Note:** The first character has index 0.
+
+**Slice From the Start**
+
+By leaving out the start index, the range will start at the first character:
+
+Get the characters from the start to position 5 (not included):
+
+```.py
+b = "Hello, World!"
+print(b[:5])
+```
+
+**Slice To the End**
+
+By leaving out the end index, the range will go to the end:
+
+Get the characters from position 2, and all the way to the end:
+
+```.py
+b = "Hello, World!"
+print(b[2:])
+```
+
+**Negative Indexing**
+
+Use negative indexes to start the slice from the end of the string:
+
+Get the characters:
+
+From: "o" in "World!" (position -5)
+
+To, but not included: "d" in "World!" (position -2):
+
+```.py
+b = "Hello, World!"
+print(b[-5:-2])
+```
+
+3. Modify Strings
+
+Python has a set of built-in methods that you can use on strings.
+
+**Upper Case**
+
+The upper() method returns the string in upper case:
+
+```.py
+a = "Hello, World!"
+print(a.upper())
+```
+
+**Lower Case**
+
+The lower() method returns the string in lower case:
+
+```.py
+a = "Hello, World!"
+print(a.lower())
+```
+
+**Remove Whitespace**
+
+Whitespace is the space before and/or after the actual text, and very often you want to remove this space.
+
+The strip() method removes any whitespace from the beginning or the end:
+
+```.py
+a = " Hello, World! "
+print(a.strip()) # returns "Hello, World!"
+```
+
+**Replace String**
+
+The replace() method replaces a string with another string:
+
+```.py
+a = "Hello, World!"
+print(a.replace("H", "J"))
+```
+
+**Split String**
+
+The split() method returns a list where the text between the specified separator becomes the list items.
+
+The split() method splits the string into substrings if it finds instances of the separator:
+
+```.py
+a = "Hello, World!"
+print(a.split(",")) # returns ['Hello', ' World!']
+```
+
