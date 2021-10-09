@@ -145,8 +145,98 @@ Comments can be used to prevent execution when testing code.
 
 **Creating a Comment**
 
+Comments starts with a #, and Python will ignore them:
 
+```.py
+# this is a comment
+print("Python is fun!")
+```
 
+Comments can be placed at the end of a line, and Python will ignore the rest of the line:
 
+```.py
+print("Python is fun!") # this is a comment
+```
 
+A comment does not have to be text that explains the code, it can also be used to prevent Python from executing code:
+
+```.py
+#print("Hello, World!")
+print("Cheers, Homie!")
+```
+
+###### Multi Line Comments
+
+Python does not really have a syntax for multi line comments.
+
+To add a multiline comment you could insert a # for each line:
+
+```.py
+#This is a comment
+#written in
+#more than just one line
+print("Hello, World!")
+```
+
+Or, not quite as intended, you can use a multiline string.
+
+Since Python will ignore string literals that are not assigned to a variable, you can add a multiline string (triple quotes) in your code, and place your comment inside it:
+
+```.py
+"""
+This is a comment
+written in
+more than just one line
+"""
+print("Hello, World!")
+```
+
+As long as the string is not assigned to a variable, Python will read the code, but then ignore it, and you have made a multiline comment.
+
+## PYTHON VARIABLE
+
+**Variable**
+
+Variables are containers for storing data values.
+
+**Creating Variables**
+
+Python has no command for declaring a variable.
+A variable is created the moment you first assign a value to it.
+
+```.py
+x = 5
+y = "John"
+print(x)
+print(y)
+```
+
+Variables do not need to be declared with any particular type, and can even change type after they have been set.
+
+```.py
+x = 4       # x is of type int
+x = "Sally" # x is now of type str
+print(x)
+```
+
+**Casting**
+
+If you want to specify the data type of a variable, this can be done with casting.
+
+```.py
+x = str(3)    # x will be '3'
+y = int(3)    # y will be 3
+z = float(3)  # z will be 3.0
+```
+
+**Get the type**
+
+You can get the data type of a variable with the type() function.
+
+```.py
+x = 5
+y = "John"
+print(type(x))
+print(type(y))
+```
 
